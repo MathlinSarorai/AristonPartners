@@ -1,0 +1,393 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="Stylesheet" href="card.css" >
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto Slab:regular,bold&subset=Latin">
+        <title>
+
+        </title>
+        <style>
+*{
+    box-sizing: border-box;
+}
+
+
+            .regb1{
+                
+                background-color: #ff7b25 ;
+                 border-radius: 20px; 
+                 width: 8%; 
+                 max-width: fit-content;
+                 height: 6%; 
+                 top: 6%; 
+                 left: 85%;
+                  position: absolute;
+                   color: white; 
+                   font-family: karma;
+                    font-weight: 400;
+                     font-size: 1vw;
+                     border-color: #EC77AB;
+            }
+
+            .regb1:hover{
+                background :linear-gradient(92deg, #EC77AB 0%, #F6D365 100%);
+            }
+
+            .topnav{
+                background :linear-gradient(92deg, #EC77AB 0%, #F6D365 100%);
+                border-radius: 10px;
+                width: 40%;
+                min-height: 4%;
+                height: 7%;
+                margin-left: 29%;
+            margin-top: 8%;
+            position: absolute;
+            }
+            .topnav a {
+  float: left;
+  color:  #333533;
+  text-align: center;
+  padding-left: 5.5%;
+  padding-top: 1.5%;
+  padding-right: 5%;
+  text-decoration: none;
+  display: inline;
+ font-size: 1.5vw;
+    font-family: Karma;
+     font-weight: 600; 
+     word-wrap: break-word;
+}
+
+.topnav a:hover {
+ 
+  color: black;
+}
+
+.topnav a.active {
+  
+  color: white;
+}
+
+.area{
+    
+    
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #F8DE22;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(11){
+    left: 5%;
+    width: 90px;
+    height: 80px;
+    animation-delay: 0s;
+    animation-duration: 12s
+}
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+@media only screen and (max-width:800px) {
+    body{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px) {
+    body{
+        width: 100%;
+    }
+}
+
+.model{
+    display:  none;
+    position: fixed;
+    z-index:1;
+left: 0;
+top: 0;
+width: 60%;
+height: 70%;
+overflow: hidden;
+margin-top: 10%;
+margin-bottom: 10%;
+margin-left: 20%;
+background-color: #ff9100;
+border-radius: 30px;
+border-color: cornflowerblue;
+
+
+}
+
+.close{
+    font-size: 40px;
+    position: absolute; 
+    left: 95%;
+    top: 1%; 
+    overflow: hidden;
+    color: black;
+}
+.close:hover,:focus{
+    cursor: pointer;
+    color:#6527BE;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+        </style>
+    </head>
+    <body     >
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+    <h3 style="margin-top: 2%; margin-left: 8%; position: absolute; color: #ff7b25; font-size: 3vmax ; font-family: Karma; font-weight: 600; word-wrap: break-word">Ariston Partners</h3>
+       <img src="logo.png" style="max-width: 5%; height: auto; margin-top: 1%; left: 2%;  position: absolute;">
+<hr width="90%;" size="5"  color="#F9C2DB"  style="margin-top: 6.5% ;position: absolute; margin-left: 4.5%;">
+<button class="regb1" onclick="document.getElementById('id1').style.display='block'" style="width: auto;">Upload CV</button>
+
+<div id="id1" class="model">
+  <span  class="close" title="Close Modal" onclick="document.getElementById('id1').style.display='none'" style="min-width: 2%; min-height: 2%;">&times;</span>  
+<h3 style="font-size: 3vmax; color: white; font-family: Roboto slab; font-weight: 600; text-align: center;">Submit Your Resume</h3>
+<h3 style="font-size: 1vmax; color: white; font-family: Roboto slab; font-weight: 600; text-align: center;">If you are a job Seeker willing to apply, Please fill out the details</h3>
+<form class="modal-content animate" action="/action_page.php" method="post"  style=" background-color: transparent; box-shadow: none; border-color: transparent;">
+  <label for="fname" style="margin-left: 10%;font-size: 1.5vmax; color: white; font-family: Roboto slab; font-weight: 600;">First Name:</label> </label>
+  <input type="text" id="fname" name="fname" autocapitalize="lname"   style="margin-left: 2%; margin-top: 3%; width: 20% ; min-width: 30px;  height: 20px; min-height: 10px; border-radius: 15px; box-shadow: none;border: none;" required>
+  <label for="lname" style="margin-left: 7%;font-size: 1.5vmax; color: white; font-family: Roboto slab; font-weight: 600;">Last Name:</label> </label>
+  <input type="text" id="lname" name="lname"  autocapitalize="lname"  style="margin-left: 2%; margin-top: 3%; width: 20% ; min-width: 30px;  height: 20px; min-height: 10px; border-radius: 15px; box-shadow: none;border: none; " required>
+  <label for="E-mail" style="margin-left: 5%;font-size: 1.5vmax; color: white; font-family: Roboto slab;  font-weight: 600;">E-mail Id:</label> </label>
+  <input type="text" id="E-mail" name="E-mail"    style="margin-left: 4%; margin-top: 6%; width: 20% ; min-width: 30px;  height: 20px; min-height: 10px; border-radius: 15px; box-shadow: none;border: none; " required>    
+  <label for="phone" style="margin-left: 7%;font-size: 1.5vmax; color: white; font-family: Roboto slab; font-weight: 600;">Phone No.:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" style="margin-left: 2%; margin-top: 3%; width: 20% ; min-width: 30px;  height: 20px; min-height: 10px;  border-radius: 15px; box-shadow: none;border: none; ">
+  <h3 style="font-size: 15px; color: white; font-family: Roboto slab; font-weight: 600; text-align: center; margin-top: 5%;">Choose a file to Upload Resume</h3>
+  <input type="file" id="myFile" name="filename" style="margin-left: 35%; margin-top: 5%; font-size: 1vmax; color: white; font-family: Roboto slab;">
+  <input type="submit"  style="border-radius: 10px; width: 15%; height: 7%; min-width: fit-content; min-height:4% ; background-color: #f25c54; border: none;margin-left: 45%; margin-top: 3%; color: white; font-size: 1vmax;">
+</div>
+</form>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
+<picture><img src="https://www.apple.com/v/ipad-air/k/images/overview/experience/features_hardware__dehv4oytd20y_large_2x.png" style="margin-top: 16%; left: 19%; position: absolute; width: 60%; overflow: hidden;" media=" max-width(1024px)"></picture>
+
+
+
+
+<article class="card" style="margin-top: 30% ; margin-left: 3%;">
+    <img
+      class="card__background"
+      src="https://www.marketing91.com/wp-content/uploads/2019/10/Management-Consulting.jpg"
+      alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+      width="1920"
+      height="2193"
+    />
+    <div class="card__content | flow">
+      <div class="card__content--container | flow">
+        <h2 class="card__title">Consulting Services</h2>
+        <p class="card__description">
+          We specialize in crafting IT solutions that empower enterprises to achieve automation, scale, and profitability.
+        </p>
+      </div>
+      <button class="card__button">Explore</button>
+    </div>
+  </article>
+  </div>
+  
+             
+  
+      <article class="card" style="margin-left: 2%; margin-top: 30%;">
+    <img
+      class="card__background"
+      src="https://www.sikich.com/wp-content/uploads/2019/01/managedservicesdeltathumb.jpg"
+      alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+      width="1920"
+      height="2193"
+    />
+    <div class="card__content | flow">
+      <div class="card__content--container | flow">
+        <h2 class="card__title">Managed Services</h2>
+        <p class="card__description">
+          We serve as the esteemed talent collaborators for industry leaders.
+        </p>
+      </div>
+      <button class="card__button">Explore</button>
+    </div>
+  </article>
+  </div>
+  
+  
+  
+      <article class="card" style="margin-left: 2%; margin-top: 30%;">
+    <img
+      class="card__background"
+      src="https://infonikka.com/wp-content/uploads/2020/02/Why-Choose-it-staffing-services.jpg"
+      alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+      width="1920"
+      height="2193"
+    />
+    <div class="card__content | flow">
+      <div class="card__content--container | flow">
+        <h2 class="card__title">Staffing Services</h2>
+        <p class="card__description">
+          We establish a resilient ecosystem to resource expansive projects for our international clients.
+        </p>
+      </div>
+      <button class="card__button">Explore</button>
+    </div>
+  </article>
+ 
+       <h3 style="margin-top: 25%; margin-left: 40%; position: absolute; background: linear-gradient(to right, #f25c54,#f27059, #f4845f,#f79d65, #f7b267); -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent; font-size: 3vmax; font-family: Ubuntu; font-weight: 600; word-wrap: break-word">Australia's Top</h3>
+
+    </body>
+</html>

@@ -1,0 +1,133 @@
+ul{
+    font-family: "Cairo";
+    
+    display: flex;
+    gap: 1em;
+   
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 2%;
+
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    font-size: 1.5vmax;
+    font-weight: 700;
+    text-decoration: none;
+    color:#EE7214;
+    padding: 10px;
+    transition: 0.5s ease;
+    text-shadow: 1px 1px black;
+    user-select: none;
+}
+ ul li a.active{
+    color: white;
+ }
+
+
+ul:hover li a{
+    color:#940B92;
+}
+
+ul:hover li a:not(:hover){
+    color: black;
+    opacity: 0.8;
+    filter: blur(1px);
+}
+
+.box{
+    width: 20%;
+    height: 10%;
+    margin-top: 60%;
+    position: absolute;
+    margin-left: 65%;
+ border-width: 3px;
+   border-color: #007bb5;
+    overflow: visible;
+   
+    
+   
+}
+.fa {
+   
+    padding-top: 10px;
+    padding-bottom: 1px;
+    align-content: center;
+    font-size: 1vmax;
+    width: 3vmax;
+    height: 2vmax;
+    text-align: center;
+    text-decoration: none;
+   
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    margin-top: 60%;
+    margin-left: 65%;
+    background: #3B5998;
+    color: white;
+    position: absolute;
+  }
+  
+  .fa-twitter {
+    margin-top: 60%;
+    margin-left: 70%;
+    position: absolute;
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    margin-top: 60%;
+    margin-left: 75%;
+    position: absolute;
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    margin-top: 60%;
+    margin-left: 80%;
+    position: absolute;
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    margin-top: 60%;
+    margin-left: 85%;
+    position: absolute;
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    margin-top: 60%;
+    margin-left: 90%;
+    position: absolute;
+    background: #125688;
+    color: white;
+  }
+  
+ 
+  
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  
+ .fa-yahoo {
+    background: #430297;
+    color: white;
+  }
+  
+
